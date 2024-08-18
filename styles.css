@@ -15,3 +15,14 @@
 .content{
     background-color: brown;
 }
+
+
+.iconImage{
+    height: 30px;
+    width: auto;
+}
+
+.iconHeaderImage{
+    height: 60px;
+    width: auto;
+}
