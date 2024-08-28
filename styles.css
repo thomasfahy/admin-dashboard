@@ -1,9 +1,11 @@
+/*Main Container Stuff */
+
 *{
     box-sizing: border-box;
     margin: 0;
     --blueish: #1992d4;
+    padding: 0;
 }
-
 
 
 .mainContainer{
@@ -13,6 +15,8 @@
     height: 100vh;
     width: 100vw;
 }
+
+/*Sidebar */
 
 .sidebar{
     grid-column: 1/2;
@@ -42,14 +46,10 @@
     align-self: flex-start;
 }
 
-.header{
-    background-color: #fff;
-    grid-row: 1/2;
-}
 
-.content{
-    background-color: brown;
-}
+
+
+/*Header section */
 
 .iconImage{
     height: 30px;
@@ -66,21 +66,72 @@
     padding-bottom: 100px;
 }
 
+.headerButton{
+    color: #fff;
+    background-color: var(--blueish);
+    text-align: center;
+    border-radius: 5rem;
+    align-content: center;
+    width: 6rem;
+    height: 3.5rem;
+    font-size: 1.3rem;
+}
+.header{
+    background-color: #fff;
+    grid-row: 1/2;
+}
 
 .utilitybar{
+    padding-top: 5vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 5vh;
+}
+
+.leftlwub{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
+}
+
+.lowerUtilityBar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.headerButtonGroup{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 2/3;
+}
+
+.headerLw{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.profName{
+    justify-self: start;
 }
 .searchLogo{
     width: 2rem;
     border-radius: 20px;
     justify-self: end;
-    background-color: yellow;
+    background-color: #facc15;
 }
 .profPic{
     width: 2rem;
     border-radius: 20px;
-    justify-self: end;
-    background-color: yellow;
+    background-color: #facc15;
+}
+
+.profPic2{
+    width: 2rem;
+    border-radius: 20px;
+    background-color: #facc15;
+    grid-row: 1/3;
+    justify-self: center;
+}
+
+/* Content */
+
+.content{
+    background-color: rgb(197, 197, 197);
 }
