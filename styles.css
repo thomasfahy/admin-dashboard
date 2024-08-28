@@ -5,6 +5,11 @@
     margin: 0;
     --blueish: #1992d4;
     padding: 0;
+    --grayish: #ddd;
+	--bg-clr: #facc15;
+	--box-shad: .15rem .3rem .5rem 3px #0001;
+	--transit: all .2s ease-in;
+	--transit-fast: all .1s ease-in;
 }
 
 
@@ -80,11 +85,21 @@
     background-color: #fff;
     grid-row: 1/2;
 }
-
-.utilitybar{
-    padding-top: 5vh;
+.searchInput{
+    background: var(--grayish);
+	border-radius: 2rem;
+	padding: .3rem .6rem;
+	border: none;
+	transition: var(--transit);
+}
+.searchbar{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.utilitybar{
+    padding-top: 2.7vh;
+    display: grid;
+    grid-template-columns: 2fr 0.7fr  0.7fr 0.7fr;
     padding-bottom: 5vh;
 }
 
@@ -113,7 +128,7 @@
 .searchLogo{
     width: 2rem;
     border-radius: 20px;
-    justify-self: end;
+    justify-self: center;
     background-color: #facc15;
 }
 .profPic{
