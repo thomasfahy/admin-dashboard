@@ -38,6 +38,11 @@
     color: #fff;
 }
 
+.iconHeaderImage{
+    height: 60px;
+    width: auto;
+}
+
 .sidebarHeading{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -53,7 +58,6 @@
 
 
 
-
 /*Header section */
 
 .iconImage{
@@ -63,10 +67,14 @@
     padding-right: 10px;
 }
 
-.iconHeaderImage{
-    height: 60px;
-    width: auto;
+
+
+.iconSearchImage{
+    height: 2rem;
+    justify-self: end;
+    padding-right: 1.3rem;
 }
+
 .mainButtons{
     padding-bottom: 100px;
 }
