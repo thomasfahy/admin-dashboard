@@ -102,8 +102,8 @@
     text-align: center;
     border-radius: 5rem;
     align-content: center;
-    width: 5rem;
-    height: 2rem;
+    width: 6rem;
+    height: 2.5rem;
     font-size: 1rem;
     font-weight: 900;
 }
@@ -123,10 +123,10 @@
     grid-template-columns: 1fr 7fr;
 }
 .utilitybar{
-    padding-top: 1.5vh;
+    padding-top: 1vh;
     display: grid;
     grid-template-columns: 5fr 0.7fr  0.7fr 0.7fr;
-    padding-bottom: 5vh;
+    padding-bottom: 3vh;
     align-items: center;
     justify-content: center;
 }
@@ -137,6 +137,7 @@
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    padding-bottom: 1rem;
 }
 
 .lowerUtilityBar{
@@ -237,10 +238,8 @@
 }
 
 .announcementWidget{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     border-radius: 10px;
     margin-left: 1.5rem;
