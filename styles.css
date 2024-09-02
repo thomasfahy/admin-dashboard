@@ -36,6 +36,8 @@
     font-size: 20px;
     font-weight: 800;
     color: #fff;
+    gap: 1rem;
+    margin: 1rem;
 }
 
 .iconHeaderImage{
@@ -184,4 +186,28 @@
 
 .content{
     background-color: rgb(197, 197, 197);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 20px;
+}
+
+.projectWidget{
+
+}
+
+.project{
+    height: 180px; /* Fixed height for project items */
+    border-left: 10px solid var(--secondary-color);
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-self: flex-start;
+    position: relative; /* Keeps .actions positioned relative to .project */
 }
