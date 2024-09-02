@@ -1,3 +1,3 @@
 # admin-dashboard
 
-thomasfahy.github.io/admin-dashboard
+www.thomasfahy.github.io/admin-dashboard
