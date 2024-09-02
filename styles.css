@@ -189,18 +189,18 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    margin-top: 20px;
 }
 
 .projectWidget{
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .project{
     height: 180px; /* Fixed height for project items */
-    border-left: 10px solid var(--secondary-color);
-    border-radius: 6px;
-    background-color: var(--primary-color);
+    border-left: 10px solid #facc15;
+    border-radius: 10px;
+    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
