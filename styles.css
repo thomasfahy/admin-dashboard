@@ -5,7 +5,7 @@
     margin: 0;
     --blueish: #1992d4;
     padding: 0;
-    --grayish: #ddd;
+    --grayish: #f7f6f6;
 	--bg-clr: #facc15;
 	--box-shad: .15rem .3rem .5rem 3px #0001;
 	--transit: all .2s ease-in;
@@ -140,7 +140,7 @@
 
 .lowerUtilityBar{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: minmax(350px, 2fr) 1fr;
     align-items: center;
     justify-content: center;
 }
@@ -182,32 +182,50 @@
     margin-right: 1rem;
 }
 
+.headerButtonGroup{
+    gap: 6px;
+    margin-right: 20px;
+}
 /* Content */
 
 .content{
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(235, 235, 235);
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: minmax(450px,2fr) 1fr;
+    grid-template-rows: 1fr 1fr 1fr fr;
 }
 
+.widgetTitle{
+    height: 1rem;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+}
 .projectWidget{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 .project{
-    height: 180px; /* Fixed height for project items */
-    border-left: 10px solid #facc15;
+    height: 12rem; /* Fixed height for project items */
+    border-left: 6px solid #facc15;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project {
     display: flex;
     flex-direction: column;
     padding: 20px;
     align-self: flex-start;
-    position: relative; /* Keeps .actions positioned relative to .project */
+    position: relative;
 }
+
+.projectIconContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: -1rem;
+    align-items: baseline;
+}
+.projectIcon{
+    height: 1.3rem;
+}
+
