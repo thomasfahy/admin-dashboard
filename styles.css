@@ -41,6 +41,7 @@
 .iconHeaderImage{
     height: 60px;
     width: auto;
+    fill: white;
 }
 
 
@@ -64,6 +65,7 @@
     width: auto;
     padding-left: 10px;
     padding-right: 10px;
+    fill: #fff;
 }
 
 .iconSearchImage{
