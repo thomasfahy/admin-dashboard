@@ -119,7 +119,7 @@
 }
 .searchbar{
     display: grid;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: 1fr 7fr;
 }
 .utilitybar{
     padding-top: 1.5vh;
@@ -191,7 +191,7 @@
 .content{
     background-color: rgb(235, 235, 235);
     display: grid;
-    grid-template-columns: minmax(450px,2fr) 1fr;
+    grid-template-columns: minmax(500px,2fr) 1fr;
     grid-template-rows: 1fr 1fr 1fr fr;
 }
 
@@ -199,11 +199,17 @@
     height: 1rem;
     padding-top: 1rem;
     padding-left: 1.5rem;
+    padding-bottom: 1rem;
 }
 .projectWidget{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 0.6rem;
+}
+
+.project-title{
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
 .project{
@@ -217,13 +223,14 @@
     padding: 20px;
     align-self: flex-start;
     position: relative;
+    margin-left: 1.5rem;
 }
 
 .projectIconContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: -1rem;
-    align-items: baseline;
+    display: flex;
+    margin-top: auto;
+    justify-content: flex-end;
+    gap: 1rem;
 }
 .projectIcon{
     height: 1.3rem;
