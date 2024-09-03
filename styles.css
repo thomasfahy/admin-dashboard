@@ -249,6 +249,7 @@
     border-radius: 10px;
     margin-left: 1.5rem;
     margin-right: 1rem;
+    grid-template-rows: max-content;
 }
 .announcement{
     height: 9rem;
