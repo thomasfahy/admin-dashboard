@@ -193,7 +193,7 @@
 .content{
     background-color: rgb(235, 235, 235);
     display: grid;
-    grid-template-columns: minmax(500px,2fr) 1fr;
+    grid-template-columns: minmax(500px,2fr) minmax(250px, 250px);
 }
 
 .widgetTitle{
@@ -243,14 +243,20 @@
 }
 
 .announcementWidget{
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     background-color: #fff;
+    gap: 1rem;
     border-radius: 10px;
     margin-left: 1.5rem;
     margin-right: 1rem;
-    grid-template-rows: max-content;
 }
+
+.trendingWidget{
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
 .announcement{
     height: 9rem;
     padding: 20px;
